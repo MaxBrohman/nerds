@@ -19,7 +19,7 @@ a {
   clip: rect(0, 0, 0, 0); }
 
 .wrapper {
-  width: 1240px;
+  width: 1220px;
   margin: 0 auto;
   display: flex;
   display: -webkit-flex; }
@@ -80,11 +80,16 @@ a {
     align-items: center; }
   .main-menu__item-link {
     text-transform: uppercase;
-    color: #000; }
+    color: #000;
+    padding-bottom: 15px;
+    margin-top: 7px; }
     .main-menu__item-link:hover {
       color: #fb565a; }
     .main-menu__item-link:active {
       color: #bcbcbc; }
+
+.studio-description-link {
+  border-bottom: 2px solid #fb565a; }
 
 .main-cart {
   width: 120px;
@@ -107,7 +112,7 @@ a {
   padding-top: 56px;
   width: 100%;
   background-image: url("../img/slide-1.png");
-  background-position-x: 79%;
+  background-position-x: 84%;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative; }
@@ -143,7 +148,7 @@ a {
 
 .slider-controls {
   position: absolute;
-  left: 46.7%;
+  left: 48%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   bottom: 97px;
@@ -193,7 +198,9 @@ a {
     width: 300px;
     margin-right: 100px; }
   .services-list__header {
-    margin-bottom: 17px; }
+    margin-top: 20px;
+    margin-bottom: 17px;
+    font-size: 24px; }
   .services-list__text {
     width: 260px;
     margin-bottom: 32px; }
@@ -238,7 +245,7 @@ a {
     justify-content: space-between; }
 
 .description-orders {
-  padding-top: 40px;
+  padding-top: 36px;
   padding-bottom: 43px;
   width: 660px; }
 
@@ -271,9 +278,17 @@ a {
 .orders__text {
   margin-bottom: 41px; }
 
+.percents-list__header {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 31px; }
+
 .percents {
   padding-top: 230px;
-  padding-right: 77px;
+  padding-right: 54px;
   background: url("../img/nerds-illustration.png") no-repeat 0 0;
   width: 360px; }
   .percents-list {
@@ -281,13 +296,6 @@ a {
     flex-wrap: wrap;
     padding: 0;
     margin: 0; }
-    .percents-list__header {
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 16px;
-      width: 100%;
-      margin-bottom: 32px; }
     .percents-list__item {
       width: 100px;
       margin-right: 18px; }
@@ -321,10 +329,12 @@ a {
         opacity: 0.2; }
 
 .map {
-  width: 100%;
-  min-height: 415px;
   position: relative;
   margin-bottom: 65px; }
+  .map iframe {
+    width: 100%;
+    min-height: 415px;
+    border: none; }
 
 .map-contacts {
   width: 320px;
@@ -342,11 +352,12 @@ a {
     margin-bottom: 22px; }
   .map-contacts__text {
     width: 210px;
+    line-height: 23.5px;
     margin-bottom: 6px; }
   .map-contacts adress {
     display: block; }
   .map-contacts__btn {
-    margin-top: 35px;
+    margin-top: 28px;
     padding-left: 47px;
     padding-right: 47px;
     padding-bottom: 15px; }

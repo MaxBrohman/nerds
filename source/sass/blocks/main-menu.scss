@@ -13,6 +13,8 @@
     &__item-link {
         text-transform: uppercase;
         color: #000;
+		padding-bottom: 15px;
+		margin-top: 7px;
         &:hover{
             color: #fb565a;
         }
@@ -20,4 +22,7 @@
             color: #bcbcbc;
         }
     }
+}
+.studio-description-link{
+	border-bottom: 2px solid #fb565a;
 }

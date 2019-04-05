@@ -1,6 +1,14 @@
+.percents-list__header{
+	text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 31px;
+}
 .percents {
     padding-top: 230px;
-    padding-right: 77px;
+    padding-right: 54px;
     background: url('../img/nerds-illustration.png') no-repeat 0 0;
     width: 360px;
     &-list{
@@ -8,14 +16,6 @@
         flex-wrap: wrap;
         padding: 0;
         margin: 0;
-        &__header{
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 16px;
-            width: 100%;
-            margin-bottom: 32px;
-        }
         &__item{
             width: 100px;
             margin-right: 18px;

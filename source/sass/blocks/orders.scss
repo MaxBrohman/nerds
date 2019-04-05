@@ -4,14 +4,14 @@
     margin-bottom: 28px;
     margin-top: 0;
 }
+.orders-list__header{
+	text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
 .orders{
     &-list{
-        &__header{
-        text-transform: uppercase;
-        color: #000;
-        font-weight: bold;
-        margin-bottom: 30px;
-        }
         &__item{
             padding-left: 35px;
             margin-bottom: 30px;
