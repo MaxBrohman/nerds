@@ -27,3 +27,19 @@ buttons.forEach(btn => {
 popupClose.addEventListener('click', () => {
 	popup.classList.remove('popup--active');
 });
+
+//slider
+//Нужна динамическая коллекция
+const controls = document.getElementsByClassName('slider-controls');
+const sliderButtons = controls[0].getElementsByClassName('slider-controls__btn');
+
+for(let elem of sliderButtons){
+	elem.addEventListener('click', (evt) => {
+		evt.preventDefault();
+		if(elem.classList.contains('active')){
+			return;
+		}
+		sliderButtons[Object.values(sliderButtons).indexOf(controls[0].querySelector('.active'))].classList.remove('active');
+		elem.classList.add('active');
+	});
+};

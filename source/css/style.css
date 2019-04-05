@@ -143,30 +143,37 @@ a {
 
 .slider-controls {
   position: absolute;
-  left: 47%;
+  left: 46.7%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 90px;
+  bottom: 97px;
   width: 95px;
-  height: 18px;
   text-align: center;
   display: flex;
   justify-content: space-between; }
-  .slider-controls label {
+  .slider-controls button {
     display: inline-block;
-    width: 8px;
-    height: 8px;
+    width: 18px;
+    height: 18px;
     margin: 0 3px;
     background: white;
     border: 3px solid white;
     vertical-align: top;
     border-radius: 50%;
     cursor: pointer; }
-
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background: #c1c1c1; }
+    .slider-controls button.active::before {
+      content: "";
+      box-sizing: border-box;
+      border: 2px solid #c1c1c1;
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%);
+              transform: translate(-50%); }
 
 .active {
   display: block; }
