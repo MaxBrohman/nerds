@@ -1,3 +1,3 @@
 # nerds
-Учебный проект HTML Academy
+Учебный проект HTML Academy.
 Верстка pixel perfect, не адаптивная.
