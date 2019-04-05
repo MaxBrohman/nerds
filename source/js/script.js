@@ -34,7 +34,7 @@ const slider = document.querySelector('.main-slider');
 const controls = slider.querySelector('.slider-controls');
 const sliderButtons = controls.querySelectorAll('.slider-controls__btn');
 const slides = slider.querySelectorAll('.main-slider__slide');
-const sliderBackgrounds = ['../img/slide-1.png', '../img/slide-2.png', '../img/slide-3.png'];
+const sliderBackgrounds = ['./img/slide-1.png', './img/slide-2.png', './img/slide-3.png'];
 for(let i = 0; i < sliderButtons.length; i++){
 	sliderButtons[i].addEventListener('click', (evt) => {
 		evt.preventDefault();
