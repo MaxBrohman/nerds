@@ -30,16 +30,22 @@ popupClose.addEventListener('click', () => {
 
 //slider
 //Нужна динамическая коллекция
-const controls = document.getElementsByClassName('slider-controls');
-const sliderButtons = controls[0].getElementsByClassName('slider-controls__btn');
-
-for(let elem of sliderButtons){
-	elem.addEventListener('click', (evt) => {
+const slider = document.querySelector('.main-slider');
+const controls = slider.querySelector('.slider-controls');
+const sliderButtons = controls.querySelectorAll('.slider-controls__btn');
+const slides = slider.querySelectorAll('.main-slider__slide');
+const sliderBackgrounds = ['../img/slide-1.png', '../img/slide-2.png', '../img/slide-3.png'];
+for(let i = 0; i < sliderButtons.length; i++){
+	sliderButtons[i].addEventListener('click', (evt) => {
 		evt.preventDefault();
-		if(elem.classList.contains('active')){
+		if(sliderButtons[i].classList.contains('active')){
 			return;
 		}
-		sliderButtons[Object.values(sliderButtons).indexOf(controls[0].querySelector('.active'))].classList.remove('active');
-		elem.classList.add('active');
+		const currentActiveIndex = Object.values(sliderButtons).indexOf(controls.querySelector('.active'));
+		sliderButtons[currentActiveIndex].classList.remove('active');
+		slides[currentActiveIndex].classList.remove('active');
+		sliderButtons[i].classList.add('active');
+		slides[i].classList.add('active');
+		slider.style.backgroundImage = `url(${sliderBackgrounds[i]})`;
 	});
-};
+}

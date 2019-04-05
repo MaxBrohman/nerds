@@ -115,7 +115,8 @@ a {
   background-position-x: 84%;
   background-repeat: no-repeat;
   background-size: contain;
-  position: relative; }
+  position: relative;
+  transition: all 500ms; }
   .main-slider__header {
     font-size: 55px;
     line-height: 55px;
@@ -128,7 +129,8 @@ a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: 100%;
-    display: none; }
+    display: none;
+    opacity: 0; }
   .main-slider__text {
     margin-bottom: 40px; }
   .main-slider__btn {
@@ -181,7 +183,8 @@ a {
               transform: translate(-50%); }
 
 .active {
-  display: block; }
+  display: block;
+  opacity: 1; }
 
 .services-list {
   margin: 0;
