@@ -1,0 +1,28 @@
+.partners {
+    &-list{
+        width: 94%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        border-top: 2px solid #eee;
+        border-bottom: 2px solid #eee;
+        margin-bottom: 80px;
+        &__item{
+            width: 260px;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            a{
+                align-self: center;
+                opacity: 0.4;
+                &:hover{
+                    opacity: 1;
+                }
+                &:active{
+                    opacity: 0.2;
+                }
+            }
+        }
+    }
+}

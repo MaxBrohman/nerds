@@ -1,0 +1,35 @@
+.map-contacts{
+    width: 320px;
+    min-height: 310px;
+    position: absolute;
+    left: 9%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 36px;
+    padding-left: 52px;
+    box-sizing: border-box;
+    &__header{
+        margin-bottom: 22px;
+    }
+    &__text{
+        width: 210px;
+        margin-bottom: 6px;
+    }
+    adress{
+        display: block;
+    }
+    &__btn{
+        margin-top: 35px;
+        padding-left: 47px;
+        padding-right: 47px;
+        padding-bottom: 15px;
+        &:hover{
+            background-color: #e74246;
+        }
+        &:active{
+            background-color: #d7373b;
+            color: #e07274;
+        }
+    }
+}

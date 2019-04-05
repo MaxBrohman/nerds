@@ -1,0 +1,15 @@
+.main-header {
+    background-color: #eeeeee;
+    padding: 0;
+    margin: 0;
+    margin-top:0;
+    padding-top: 47px;
+    display: flex;
+    &__logo{
+        width: 300px;
+        margin-right: 47px;
+        &:active img{
+            opacity: 0.4;
+        }
+    }
+}

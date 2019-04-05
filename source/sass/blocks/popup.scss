@@ -1,0 +1,108 @@
+.popup{
+    display: none;
+    min-width: 960px;
+    position: relative;
+    box-sizing: border-box;
+    position: fixed;
+    padding-top: 75px;
+    padding-right: 100px;
+    padding-left: 100px;
+    min-height: 590px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #fff;
+    box-shadow: 0 15px 30px 15px rgba(0,0,0,0.25); 
+    &-header{
+        font-size: 45px;
+        margin-top: 0;
+    }
+    label{
+        display: block;
+        font-weight: bold;
+        line-height: 18px;
+        margin-bottom: 13px;
+    }
+    input{
+        width: 360px;
+        height: 50px;
+        border: 2px solid #000;
+        border-radius: 2px;
+        padding-left: 13px;
+        padding-top: 20px;
+        padding-bottom: 18px;
+        line-height: 0;
+        box-sizing: border-box;
+        display: block;
+        outline: none;
+        font: inherit;
+        opacity: 0.2;
+        &:hover{
+            opacity: 0.4;
+        }
+        &:focus{
+            opacity: 1;
+        }
+    }
+    textarea{
+        width: 740px;
+        height: 115px;
+        resize: none;
+        border: 2px solid #000;
+        border-radius: 2px;
+        padding-top: 15px;
+        padding-left: 15px;
+        margin-bottom: 50px;
+        outline: none;
+        font: inherit;
+        opacity: 0.2;
+        &:hover{
+            opacity: 0.4;
+        }
+        &:focus{
+            opacity: 1;
+        }
+    }
+    &__close-btn{
+        position: absolute;
+        right: 90px;
+        top: 80px;
+        width: 26px;
+        height: 26px;
+        color: #fecccd;
+        font-size: 26px;
+        font-weight: bold;
+        &:hover{
+            color: #fb565a;
+            cursor: pointer;
+        }
+        &:active{
+            color: #ffeeee;
+        }
+    }
+}
+
+.input-wrapper{
+    display: inline-block;
+    margin-right: 35px;
+    margin-bottom: 35px;
+}
+.email-wrapper{
+    margin-right: 0;
+}
+
+.popup-btn{
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 85px;
+    &:hover{
+        background-color: #e74246;
+    }
+    &:active{
+        background-color: #d7373b;
+        color: #e07274;
+    }
+}
+.popup--active{
+    display: block;
+}

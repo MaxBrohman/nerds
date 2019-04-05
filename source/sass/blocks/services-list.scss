@@ -1,0 +1,64 @@
+.services-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-bottom: 2px solid #eee;
+    &__item {
+        padding-top: 150px;
+        padding-bottom: 80px;
+        background-repeat: no-repeat;
+        background-position-y: 0%;
+        width: 300px;
+        margin-right: 100px;
+    }
+    &__header {
+        margin-bottom: 17px;
+    }
+    &__text {
+        width: 260px;
+        margin-bottom: 32px;
+    }
+    &__btn {
+        padding: 16px 40px;
+    }
+}
+.sites-item {
+    background-image: url('../img/sites.png');
+}
+.apps-item {
+    background-image: url('../img/apps.png');
+}
+.presentations-item {
+    background-image: url('../img/presentations.png');
+}
+.sites-btn{
+    &:hover{
+        background-color: #e74246;
+    }
+    &:active{
+        background-color: #d7373b;
+        color: #e07274;
+    }
+}
+.apps-btn {
+    background-color: #00ca74;
+    &:hover{
+        background-color: #00bc6c;
+    }
+    &:active{
+        background-color: #00aa62;
+        color: #74c69a;
+    }
+}
+.presentation-btn {
+    background-color: #efc84a;
+    &:hover{
+        background-color: #eab534;
+    }
+    &:active{
+        background-color: #e5a722;
+        color: #edc47c;
+    }
+}

@@ -1,0 +1,15 @@
+.main-cart {
+    width: 120px;
+    text-transform: uppercase;
+    margin-left: 40px;
+    color: #000;
+    text-align: right;
+    align-self: center;
+    background: url('../svg/cart-icon.svg') no-repeat left center;
+    &:hover{
+        color: #fb565a;
+    }
+    &:active{
+        color: #bcbcbc;
+    }
+}

@@ -1,0 +1,34 @@
+.orders-header {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 28px;
+    margin-top: 0;
+}
+.orders{
+    &-list{
+        &__header{
+        text-transform: uppercase;
+        color: #000;
+        font-weight: bold;
+        margin-bottom: 30px;
+        }
+        &__item{
+            padding-left: 35px;
+            margin-bottom: 30px;
+            position: relative;
+            &::before{
+                content: "";
+                width: 25px;
+                height: 2px;
+                background-color: #fb565a;
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                bottom: 8px;
+            }
+        }
+    }
+    &__text{
+        margin-bottom: 41px;
+    }
+}

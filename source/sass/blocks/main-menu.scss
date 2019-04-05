@@ -1,0 +1,23 @@
+.main-menu {
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 155px;
+    &__item {
+        margin-right: 28px;
+        display: flex;
+        align-items: center;
+    }
+    &__item-link {
+        text-transform: uppercase;
+        color: #000;
+        &:hover{
+            color: #fb565a;
+        }
+        &:active{
+            color: #bcbcbc;
+        }
+    }
+}
