@@ -29,23 +29,36 @@ popupClose.addEventListener('click', () => {
 });
 
 //slider
-//Нужна динамическая коллекция
 const slider = document.querySelector('.main-slider');
 const controls = slider.querySelector('.slider-controls');
 const sliderButtons = controls.querySelectorAll('.slider-controls__btn');
 const slides = slider.querySelectorAll('.main-slider__slide');
 const sliderBackgrounds = ['./img/slide-1.png', './img/slide-2.png', './img/slide-3.png'];
+const event = new CustomEvent('activate');
+const activateSlide = (i) =>{
+	if(sliderButtons[i].classList.contains('active')){
+		return;
+	}
+	const currentActiveIndex = Object.values(sliderButtons).indexOf(controls.querySelector('.active'));
+	sliderButtons[currentActiveIndex].classList.remove('active');
+	slides[currentActiveIndex].classList.remove('active');
+	sliderButtons[i].classList.add('active');
+	slides[i].classList.add('active');
+	slider.style.backgroundImage = `url(${sliderBackgrounds[i]})`;
+};
+
 for(let i = 0; i < sliderButtons.length; i++){
 	sliderButtons[i].addEventListener('click', (evt) => {
 		evt.preventDefault();
-		if(sliderButtons[i].classList.contains('active')){
-			return;
-		}
-		const currentActiveIndex = Object.values(sliderButtons).indexOf(controls.querySelector('.active'));
-		sliderButtons[currentActiveIndex].classList.remove('active');
-		slides[currentActiveIndex].classList.remove('active');
-		sliderButtons[i].classList.add('active');
-		slides[i].classList.add('active');
-		slider.style.backgroundImage = `url(${sliderBackgrounds[i]})`;
+		activateSlide(i);
+	});
+	sliderButtons[i].addEventListener('activate', () => {
+		activateSlide(i);
 	});
 }
+let timerId = setTimeout( function changeSlider(){
+	const activeBtn = controls.querySelector('.active');
+	const nextBtn = activeBtn.nextElementSibling || activeBtn.parentNode.firstElementChild;
+	nextBtn.dispatchEvent(event);
+	timerId = setTimeout(changeSlider, 5000);
+}, 5000);

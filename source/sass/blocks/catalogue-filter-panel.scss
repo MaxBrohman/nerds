@@ -1,8 +1,24 @@
-.filter{
-    padding-top: 60px;
-}
 .filter-panel{
     width: 260px;
+    margin-right: 130px;
+    &__show{
+        text-transform: uppercase;
+        font-size: 18px;
+        width: 260px;
+        height: 50px;
+        border: none;
+        background-color: #f1f1f1;
+        margin-top: 35px;
+        border-radius: 3px;
+        cursor: pointer;
+        &:hover, 
+        &:focus{
+            background-color: #dfdfdf;
+        }
+        &:active{
+            color: #959595;
+        }
+    }
 }
 .filter-item{
     margin:0;
