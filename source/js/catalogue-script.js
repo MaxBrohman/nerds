@@ -66,7 +66,11 @@ const inputChangeHandler = (input, toggle, secondInput) => {
 			}
 			return value;
 		};
-		toggle.style.left = `${+((maxValue * (inputValue(+input.value)/MAX_PRICE_VALUE)).toFixed(0)) + TOGGLE_MIN_VAL}px`;
+		if(toggle === toggleMin){
+			toggle.style.left = `${+((maxValue * (inputValue(+input.value)/MAX_PRICE_VALUE)).toFixed(0)) + TOGGLE_MIN_VAL}px`;
+		} else{
+			toggle.style.left = `${+((maxValue * (inputValue(+input.value)/MAX_PRICE_VALUE)).toFixed(0)) + TOGGLE_MIN_VAL + toggle.offsetWidth}px`;
+		}
 		getBarWidth();
 	});
 };
