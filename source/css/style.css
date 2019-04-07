@@ -588,7 +588,8 @@ header.catalogue .catalogue-link {
   .range-controls .bar {
     width: 70%;
     height: 2px;
-    background-color: #00ca74; }
+    background-color: #00ca74;
+    position: relative; }
   .range-controls .toggle {
     width: 4px;
     height: 4px;

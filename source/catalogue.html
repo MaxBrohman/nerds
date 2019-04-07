@@ -20,8 +20,7 @@
                         <li class="main-menu__item"><a href="#contact-us" class="main-menu__item-link contacts-link">контакты</a></li>
                     </ul>
                     <a href="#" class="main-cart">Корзина</a>
-                    </nav>
-                </section>
+                </nav>
             </div>
         </header>
         <main>
@@ -83,6 +82,7 @@
                 </form>
                 <div class="catalogue-wrapper">
                     <article class="filter-sort">
+                        <h3 class="visually-hidden">Фильтр шаблонов. Выбор показателя для фильтрации</h3>
                         <p class="filter-sort__header">сортировать:</p>
                         <div class="filter-sort__type-panel">
                             <input type="radio" name="sort" id="price" value="price" class="visually-hidden" checked>
@@ -90,8 +90,8 @@
                             <input type="radio" name="sort" value="type" class="visually-hidden" id="type">
                             <label for="type">по типу  
                             </label>
-                            <input type="radio" name="sort" value="name" class="visually-hidden" id="name">
-                            <label for="name">по названию   
+                            <input type="radio" name="sort" value="title" class="visually-hidden" id="title">
+                            <label for="title">по названию   
                             </label>
                         </div>
                         <div class="filter-sort__button-panel">
@@ -104,6 +104,7 @@
                         </div>
                     </article>
                     <section class="content-container">
+                        <h3 class="visually-hidden">Каталог готовых шаблонов</h3>
                         <div class="content-container__item">
                             <div class="top-border"></div>
                             <img src="./img/img-sedona.png" alt="Макет Седона" width="360" height="576">
@@ -161,6 +162,7 @@
                         </div>
                     </section>
                     <article class="content-buttons">
+                        <h3 class="visually-hidden">Раздел с кнопками выбора страницы для отображения других шаблонов</h3>
                         <button class="numbered-btn current">1</button>
                         <button class="numbered-btn">2</button>
                         <button class="numbered-btn">3</button>
@@ -169,11 +171,11 @@
                 </div>
             </div>
             <section class="map" id="contact-us">
-                    <iframe src="https://yandex.ru/map-widget/v1/-/CBF1eXB6~A" width="100%" height="415" frameborder="0" allowfullscreen="true"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CBF1eXB6~A"></iframe>
                 <div class="map-contacts">
                     <h3 class="header map-contacts__header">nerds design studio</h3>
-                    <adress class="text map-contacts__text">191999, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</adress>
-                    <adress class="text map-contacts__text">тел. +7(999)999-99-99</adress>
+                    <p class="text map-contacts__text">191999, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    <p class="text map-contacts__text">тел. +7(999)999-99-99</p>
                     <button class="btn map-contacts__btn">напишите нам</button>
                 </div>
                 <div class="map-marker">
@@ -206,23 +208,6 @@
                     </div>
                 </div>
             </footer>
-            <section class="popup">
-                <div class="popup__close-btn">&#10006;</div>
-                <p class="popup-header">Напишите нам</p>
-                <form action="#" method="POST">
-                  <div class="input-wrapper">
-                    <label for="name">Ваше имя:</label>
-                    <input id="name" type="text" placeholder="Имя Фамилия" required>
-                  </div>
-                  <div class="input-wrapper email-wrapper">
-                    <label for="email">Ваш e-mail:</label>
-                    <input id="email" type="text" placeholder="email@example.com" required>
-                  </div>
-                    <label for="message">Текст письма:</label>
-                    <textarea name="message" id="message" placeholder="В свободной форме" required></textarea>
-                    <button class="btn popup-btn">отправить</button>
-                </form>
-            </section>
             <section class="popup">
                 <h3 class="visually-hidden">Обратная связь </h3>
                 <div class="popup__close-btn">&#10006;</div>
